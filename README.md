@@ -1,8 +1,7 @@
 <div align="center">
  <img src="logo.png" width="66%"/>
  <h1>
-  <em>Neat Math Core</em><br>
-  <font size="6px">NMC</font>
+  <em>Neat Math Core</em>
  </h1>
 </div>
 
