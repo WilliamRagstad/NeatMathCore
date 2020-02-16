@@ -3,5 +3,7 @@
 
 Logo in Latex:
 ```latex
+\begin{bmatrix}
 \frac{\sum_{{\color{Red} N}={\color{Red}e^a}*{\color{Red}t}}^{{\color{Purple} m}}({\color{Purple} a}*{\color{Purple} t^h})}{C_{{\color{DarkGreen} core}}}
+\end{bmatrix}
 ```
