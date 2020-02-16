@@ -1,6 +1,10 @@
 # NeatMathCore
  NMC is a math kernel built in .NET Core
 
+<div align="center">
+<img src="logo.png" width="50%"/>
+</div>
+
 Logo in Latex:
 ```latex
 \begin{bmatrix}
