@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeatMathCore", "NeatMathCore\NeatMathCore.csproj", "{718C969F-A273-4001-8363-107536B54152}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{718C969F-A273-4001-8363-107536B54152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{718C969F-A273-4001-8363-107536B54152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{718C969F-A273-4001-8363-107536B54152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{718C969F-A273-4001-8363-107536B54152}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84999996-B332-44A9-9E30-A02C36946AB5}
+	EndGlobalSection
+EndGlobal
