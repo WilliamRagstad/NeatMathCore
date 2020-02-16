@@ -2,7 +2,7 @@
  <img src="logo.png" width="66%"/>
  <h1>
   <em>Neat Math Core</em><br>
-  <span>NMC</span>
+  <font size="6px">NMC</font>
  </h1>
 </div>
 
