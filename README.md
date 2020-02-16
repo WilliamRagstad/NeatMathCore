@@ -1,9 +1,11 @@
-# NeatMathCore
- NMC is a math kernel built in .NET Core
-
 <div align="center">
-<img src="logo.png" width="66%"/>
+ <img src="logo.png" width="66%"/>
+ <h1><em>Neat Math Core</em></h1>
+ <span>NMC</span>
 </div>
+
+The NMC Kernel and its computation capabilities can be accessed through its command-line interface. Which allows NMC to be used in large-scale batch mode or as background computing environments.
+
 
 Logo in Latex:
 ```latex
