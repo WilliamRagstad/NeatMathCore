@@ -17,12 +17,23 @@ namespace NeatMathCore.Math.Models
         public Expressions.VariableExpression Variable { get; }
         public int Exponent { get; }
 
-        public double Evaluate(Variables.VariableCollection variables)
+        public IExpression Evaluate(Variables.VariableCollection variables)
         {
-            return Coefficient * System.Math.Pow(Variable.Evaluate(variables), Exponent);
+            IExpression variableValue = Variable.Evaluate(variables);
+            if (variableValue is Expressions.ConstantExpression)
+                return new Expressions.ConstantExpression(Coefficient * System.Math.Pow(((Expressions.ConstantExpression)variableValue).Value, Exponent));
+            else
+                return this;
         }
 
-        public string ToStringExpression() => $"{Coefficient}*{Variable}^{Exponent}";
+        public string ToStringExpression()
+        {
+            if (Coefficient == 0)
+                return "0";
+            if (Coefficient == 1)
+                return $"{Variable}^{Exponent}";
+            return $"{Coefficient}*{Variable}^{Exponent}";
+        }
         public string ToStringExpression(bool coefficientSign)
         {
             if (!coefficientSign) return $"{System.Math.Abs(Coefficient)}*{Variable}^{Exponent}";

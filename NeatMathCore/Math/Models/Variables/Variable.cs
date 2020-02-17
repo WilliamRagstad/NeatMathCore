@@ -13,6 +13,8 @@ namespace NeatMathCore.Math.Models.Variables
         }
 
         public string Identifier { get; }
-        public double? Value { get; }
+        public double? Value;
+
+        public override string ToString() => Identifier + "=" + Value;
     }
 }

@@ -14,7 +14,7 @@ namespace NeatMathCore.Math.Models.Expressions
             if (!(Exponent is ConstantExpression || Exponent is VariableExpression || Exponent is ExponentExpression))
             {
                 //   6 + x
-                //  e          =  e^(6+x)
+                //  e       =>   e^(6+x)
 
                 Exponent = new EnclosedExpression(Exponent);
             }
@@ -23,18 +23,16 @@ namespace NeatMathCore.Math.Models.Expressions
         public IExpression Base;
         public IExpression Exponent;
 
-        public double Evaluate(Variables.VariableCollection variables)
+        public IExpression Evaluate(Variables.VariableCollection variables)
         {
-            double expVal = Exponent.Evaluate(variables);
-            if (expVal == 0) return 1;
-            double baseVal = Base.Evaluate(variables);
-            if (expVal == 1) return baseVal;
-            return System.Math.Pow(Base.Evaluate(variables), Exponent.Evaluate(variables));
+            IExpression expExpr = Exponent.Evaluate(variables);
+            if (expExpr is ConstantExpression && ((ConstantExpression)expExpr).Value == 0) return new ConstantExpression(1);
+            IExpression baseExpr = Base.Evaluate(variables);
+            if (expExpr is ConstantExpression && ((ConstantExpression)expExpr).Value == 1) return baseExpr;
+            return this;
         }
 
-        public string ToStringExpression()
-        {
-            return Base + "^" + Exponent;
-        }
+        public string ToStringExpression() => Base + "^" + Exponent;
+        public override string ToString() => ToStringExpression();
     }
 }

@@ -13,19 +13,20 @@ namespace NeatMathCore.Math.Models.Expressions
 
         public string Identifier { get; }
 
-        public double Evaluate(Variables.VariableCollection variables)
+        public IExpression Evaluate(Variables.VariableCollection variables)
         {
             if (variables.Contains(Identifier))
             {
                 Variables.Variable v = variables.Get(Identifier);
                 if (v.Value.HasValue)
-                    return v.Value.Value;
+                    return new ConstantExpression(v.Value.Value);
                 else
-                    throw new NotFiniteNumberException("Variable " + Identifier + " has no value");
+                    return this;
             }
-            else throw new NotFiniteNumberException("Variable " + Identifier + " is not defined");
+            else return this;
         }
 
         public string ToStringExpression() => Identifier.ToString();
+        public override string ToString() => ToStringExpression();
     }
 }

@@ -42,5 +42,9 @@ namespace NeatMathCore.Math.Models.Variables
             }
             return null;
         }
+
+
+        public static implicit operator VariableCollection(Variable[] va) => new VariableCollection(va);
+        public static explicit operator Variable[](VariableCollection vc) => vc.Variables;
     }
 }

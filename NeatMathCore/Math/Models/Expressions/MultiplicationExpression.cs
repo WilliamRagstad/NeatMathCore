@@ -15,11 +15,15 @@ namespace NeatMathCore.Math.Models.Expressions
         public IExpression Factor1;
         public IExpression Factor2;
 
-        public double Evaluate(Variables.VariableCollection variables)
+        public IExpression Evaluate(Variables.VariableCollection variables)
         {
             return Factor1.Evaluate(variables) * Factor2.Evaluate(variables);
         }
 
-        public string ToStringExpression() => Factor1 + "*" + Factor2;
+        public string ToStringExpression() {
+            if (Factor1 is VariableExpression || Factor2 is VariableExpression) return Factor1.ToStringExpression() + Factor2.ToStringExpression();
+            return Factor1.ToStringExpression() + "*" + Factor2.ToStringExpression();
+        }
+        public override string ToString() => ToStringExpression();
     }
 }

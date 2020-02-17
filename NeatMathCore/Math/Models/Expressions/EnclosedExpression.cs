@@ -13,15 +13,13 @@ namespace NeatMathCore.Math.Models.Expressions
         
         public IExpression Expression { get; }
 
-        public double Evaluate(Variables.VariableCollection variables)
-        {
-            return Expression.Evaluate(variables);
-        }
+        public IExpression Evaluate(Variables.VariableCollection variables) => Expression.Evaluate(variables);
 
         public string ToStringExpression()
         {
             if (Expression is ConstantExpression || Expression is VariableExpression) return Expression.ToStringExpression();
             return "(" + Expression.ToStringExpression() + ")";
         }
+        public override string ToString() => ToStringExpression();
     }
 }

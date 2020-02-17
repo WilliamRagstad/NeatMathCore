@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 
 namespace NeatMathCore.Math.Models.Expressions
@@ -13,11 +14,9 @@ namespace NeatMathCore.Math.Models.Expressions
 
         public double Value;
 
-        public double Evaluate(Variables.VariableCollection variables)
-        {
-            return Value;
-        }
+        public IExpression Evaluate(Variables.VariableCollection variables) => this;
 
-        public string ToStringExpression() => Value.ToString();
+        public string ToStringExpression() => Value.ToString(CultureInfo.InvariantCulture);
+        public override string ToString() => Value.ToString(CultureInfo.InvariantCulture);
     }
 }
