@@ -46,8 +46,7 @@ Here's a graph of the two functions.
 ## Logo
 
 * **LaTeX**
-![img](https://latex.codecogs.com/png.latex?\dpi{150}\large%20\begin{bmatrix}%20\frac{\sum_{{\color{Red}a}={\color{Red}t}}^{{\color{Red}N_e}}({\color{Purple}M_a}/{\color{Purple}t^h})}{C_{{\color{DarkGreen}core}}}
-  \end{bmatrix}_2^\pi)
+![img](https://latex.codecogs.com/png.latex?\dpi{150}\large%20\begin{bmatrix}%20\frac{\sum_{{\color{Red}a}={\color{Red}t}}^{{\color{Red}N_e}}({\color{Purple}M_a}/{\color{Purple}t^h})}{C_{{\color{DarkGreen}core}}}%20\end{bmatrix}_2^\pi)
 
 ```latex
 \begin{bmatrix}
