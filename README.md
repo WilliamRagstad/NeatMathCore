@@ -31,6 +31,7 @@ Console.WriteLine(ex1.ToStringExpression(true, true));
 ```
 
 <!-- ![img](https://latex.codecogs.com/png.latex?\dpi{150}\large f(x)=\frac{x_1+x_2+x_3+...+x_n}{n}) -->
+
 $$
 f(x)=x^2-6x+7\\
 \Rightarrow \\
@@ -38,6 +39,7 @@ g(x)=(x-4.414213562373095)(x-1.5857864376269049)\\
 or\\
 g(x)=(x-3+\sqrt{2})(x-3-\sqrt{2})
 $$
+
 The two functions `f(x)` and `g(x)` are sure to be identical, not only sharing roots. But this can be configured and simplified even more.
 
 Here's a graph of the two functions.
