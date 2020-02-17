@@ -19,15 +19,15 @@ ex1.Designation = "g";
 Console.WriteLine(ex1.ToStringExpression(true, true));
 ```
 
-<!-- ![img](https://latex.codecogs.com/png.latex?\dpi{150}\large f(x)=\frac{x_1+x_2+x_3+...+x_n}{n}) -->
+<!-- ![img](https://latex.codecogs.com/png.latex?\dpi{150}\large%20f(x)=\frac{x_1+x_2+x_3+...+x_n}{n}) -->
 
-![img](https://latex.codecogs.com/png.latex?\dpi{150}\large%20f(x\)=x^2-6x+7)
+![img](https://latex.codecogs.com/png.latex?\dpi{150}\large%20f\(x\)=x^2-6x+7)
 
-![img](https://latex.codecogs.com/png.latex?\dpi{150}\large%20g(x\)=(x-4.414213562373095\)(x-1.5857864376269049\))
+![img](https://latex.codecogs.com/png.latex?\dpi{150}\large%20g\(x\)=\(x-4.414213562373095\)\(x-1.5857864376269049\))
 
 ![img](https://latex.codecogs.com/png.latex?\dpi{150}\large%20or)
 
-![img](https://latex.codecogs.com/png.latex?\dpi{150}\large%20g(x\)=(x-3+\sqrt{2}\)(x-3-\sqrt{2}\))
+![img](https://latex.codecogs.com/png.latex?\dpi{150}\large%20g\(x\)=\(x-3+\sqrt{2}\)\(x-3-\sqrt{2}\))
 <!--$$
 f(x)=x^2-6x+7\\
 \Rightarrow \\
@@ -46,8 +46,7 @@ Here's a graph of the two functions.
 ## Logo
 
 * **LaTeX**
-![img](https://latex.codecogs.com/png.latex?\dpi{150}\large%20\begin{bmatrix}
-  \frac{\sum_{{\color{Red}a}={\color{Red}t}}^{{\color{Red}N_e}}({\color{Purple}M_a}/{\color{Purple}t^h})}{C_{{\color{DarkGreen}core}}}
+![img](https://latex.codecogs.com/png.latex?\dpi{150}\large%20\begin{bmatrix}%20\frac{\sum_{{\color{Red}a}={\color{Red}t}}^{{\color{Red}N_e}}({\color{Purple}M_a}/{\color{Purple}t^h})}{C_{{\color{DarkGreen}core}}}
   \end{bmatrix}_2^\pi)
 
 ```latex
