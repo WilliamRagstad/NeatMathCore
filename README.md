@@ -9,17 +9,6 @@
 
 
 
-
-LaTeX Logo:
-
-```latex
-\begin{bmatrix}
-\frac{\sum_{{\color{Red}a}={\color{Red}t}}^{{\color{Red} N_e}}({\color{Purple} M_a}/{\color{Purple} t^h})}{C_{{\color{DarkGreen} core}}}
-\end{bmatrix}_2^\pi
-```
-
-
-
 ## Examples
 This C# code below, creates a new polynomial abbreviated `f` and store it in `ext1` , then using the `ToStringExpression(...)` to factor the expression, and print the result with a new abbreviation `g`.
 
@@ -32,16 +21,38 @@ Console.WriteLine(ex1.ToStringExpression(true, true));
 
 <!-- ![img](https://latex.codecogs.com/png.latex?\dpi{150}\large f(x)=\frac{x_1+x_2+x_3+...+x_n}{n}) -->
 
-\begin{equation}
+![img](https://latex.codecogs.com/png.latex?\dpi{150}\large f(x\)=x^2-6x+7)
+
+![img](https://latex.codecogs.com/png.latex?\dpi{150}\large g(x\)=(x-4.414213562373095\)(x-1.5857864376269049\))
+
+![img](https://latex.codecogs.com/png.latex?\dpi{150}\large or)
+
+![img](https://latex.codecogs.com/png.latex?\dpi{150}\large g(x\)=(x-3+\sqrt{2}\)(x-3-\sqrt{2}\))
+<!--$$
 f(x)=x^2-6x+7\\
 \Rightarrow \\
 g(x)=(x-4.414213562373095)(x-1.5857864376269049)\\
 or\\
 g(x)=(x-3+\sqrt{2})(x-3-\sqrt{2})
-\end{equation}
-
+$$-->
 The two functions `f(x)` and `g(x)` are sure to be identical, not only sharing roots. But this can be configured and simplified even more.
 
 Here's a graph of the two functions.
 
 ![Panel](assets/example_polynomial_desmos.PNG) ![Graphs](assets/example_polynomial_desmos_graph.PNG)
+
+
+
+## Logo
+
+* **LaTeX**
+![img](https://latex.codecogs.com/png.latex?\dpi{150}\large \begin{bmatrix}
+  \frac{\sum_{{\color{Red}a}={\color{Red}t}}^{{\color{Red} N_e}}({\color{Purple} M_a}/{\color{Purple} t^h})}{C_{{\color{DarkGreen} core}}}
+  \end{bmatrix}_2^\pi)
+
+```latex
+\begin{bmatrix}
+\frac{\sum_{{\color{Red}a}={\color{Red}t}}^{{\color{Red} N_e}}({\color{Purple} M_a}/{\color{Purple} t^h})}{C_{{\color{DarkGreen} core}}}
+\end{bmatrix}_2^\pi
+```
+
